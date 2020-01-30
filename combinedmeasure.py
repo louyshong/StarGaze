@@ -179,7 +179,6 @@ def read_accelerometer_data():
     data0 = bus.read_byte_data(0x18, 0x2A)
     data1 = bus.read_byte_data(0x18, 0x2B)
 
-    # Convert the data
     yAccl = data1 * 256 + data0
     if yAccl > 32767 :
     	yAccl -= 65536
@@ -190,7 +189,6 @@ def read_accelerometer_data():
     data0 = bus.read_byte_data(0x18, 0x2C)
     data1 = bus.read_byte_data(0x18, 0x2D)
 
-    # Convert the data
     zAccl = data1 * 256 + data0
     if zAccl > 32767 :
     	zAccl -= 65536
@@ -200,12 +198,12 @@ def read_accelerometer_data():
 def calibrate_accelerometer():
 
     sampleDuration = 20.0    # test lasts for 60,000ms (20 seconds)
-    sampleRate = 3.0          # 3Hz sample rate
+    sampleRate = 3.0         # 3Hz sample rate
     sleep_duration = 1 / sampleRate
 
-    accelerometer_init()     # initialize HMC5883L magnetometer
+    accelerometer_init()     
 
-    start_time = time.time()    # note the start start_time
+    start_time = time.time()    
     accelerationValuesList = []  # initialse list to store data
 
     print("------------ Calibrating accelerometer ------------------")
@@ -288,7 +286,7 @@ if __name__ == "__main__":
         declination = 0.000872665
 
         print("put the pi down")
-        time.sleep(5) #5 seconds to put pi down (for testing)
+        time.sleep(5) #5 seconds to put pi down (for accelerometer to calibrate)
 
         acc_cal_baseline = calibrate_accelerometer()
 
