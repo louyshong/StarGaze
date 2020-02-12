@@ -20,7 +20,7 @@
 
   <!-- CSS -->
   <link href="css/landing-page.min.css" rel="stylesheet">
-  <script src="sparkle.js"></script>
+  <script src="vendor/morejs/sparkle.js"></script>
 
 </head>
 
@@ -50,7 +50,7 @@
   </header>
 
   <!-- Icons -->
-  <section id="icons" class="features-icons bg-light text-center" style="padding-top : 3rem">
+  <section id="icons" class="features-icons bg-light text-center" style="padding-top: 3rem; padding-bottom: 3rem">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -59,8 +59,8 @@
               <i class="icon-camera m-auto" style="color: #6610f2"></i>
             </div>
             <h3>Snap the stars</h3>
-            <p class="lead mb-0">Save your best moments in stargazing by capturing high-resolution
-              photos for viewing anytime. Our companion app also provides a fun way for you to interact with your photos.
+            <p class="lead mb-0">Save your best moments in stargazing by capturing <a style="color: #6610f2; font-weight: bold" href=#camera>high-resolution photos</a>
+              for viewing anytime. Our companion app also provides a fun way for you to interact with your photos.
             </p>
           </div>
         </div>
@@ -71,7 +71,7 @@
             </div>
             <h3>Shadow the stars</h3>
             <p class="lead mb-0">Stop spending hours calibrating and positioning
-              your telescope with our intelligent StarFinder technology that brings
+              your telescope with our intelligent <a style="color: #6610f2; font-weight: bold" href="#starfinder">StarFinder technology </a>that brings
               you to your chosen target celestial object in no time.
             </p>
           </div>
@@ -83,41 +83,48 @@
             </div>
             <h3>Study the stars</h3>
             <p class="lead mb-0">Learn about stars, constellations and planets
-              in the night sky with our smart companion app that gives you bite-sized astronomy facts &
+              in the night sky with our <a style="color: #6610f2; font-weight: bold" href="#app">smart companion app</a> that gives you bite-sized astronomy facts &
               updates on upcoming astronomical events! </p>
           </div>
         </div>
       </div>
+    </div>
+    <div class="container" style="margin-top: 3rem; margin-bottom: 1.5rem; color:  #4b0080">
+      <h4>Download the StarGaze companion app !</h4>
+    </div>
+    <div class="container">
+      <a type="button" class="btn btn-dark btn-lg download-button" style="margin-right: 1.5rem" href="https://www.apple.com/ios/app-store/"><i class="fab fa-apple"></i> Download</a>
+      <a type="button" class="btn btn-dark btn-lg download-button" style="margin_left: 1.5rem" href="https://play.google.com/store/apps?hl=en"><i class="fab fa-google-play"></i> Download</a>
     </div>
   </section>
 
   <!-- Features -->
   <section id="features" class="showcase">
     <div class="container-fluid p-0">
-      <div class="row no-gutters">
+      <div id="app" class="row no-gutters">
         <div class="col-lg-6 order-lg-2 text-white showcase-img embed-responsive">
-            <video class="embed-responsive-item" src="img/video-1581424748.mp4" allowfullscreen autoplay loop muted></video>
+          <video class="embed-responsive-item" src="img/video-1581516006.mp4" allowfullscreen autoplay loop muted></video>
         </div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Your Mobile Observatory</h2>
+          <h2 style="color: #4b0080">Your Mobile Observatory 🌌</h2>
           <p class="lead mb-0" style="padding-top: 2rem; padding-bottom: 1rem">
-            Keep track of all your astrophotos and view them interactively on a beautiful user-friendly 3D interface.
+            ⭐️Keep track of all your astrophotos and view them interactively on a beautiful user-friendly 3D interface.
           </p>
           <p class="lead mb-0" style="padding-bottom: 1rem">
-            Explore the night sky with the sky map feature and gain a deeper understanding of our universe.
+            ⭐️Explore the night sky with the <strong style="color: #6610f2">sky map feature</strong> and gain a deeper understanding of our universe.
           </p>
           <p class="lead mb-0" style="padding-bottom: 1rem">
-            Receive reminders of the latest astronomical events such as meteor showers, solar eclipses, full moons and more!
+            ⭐️Receive reminders of the latest astronomical events such as meteor showers, solar eclipses, full moons and more!
           </p>
           <p class="lead mb-0">
-            The StarGaze companion app is available on Android & iOS and is frequently updated with new features to enhance your astronomy experience.
+            The <strong style="color: #6610f2">StarGaze companion app</strong> is available on Android & iOS and is frequently updated with new features to enhance your astronomy experience.
           </p>
         </div>
       </div>
-      <div class="row no-gutters">
+      <div id="starfinder" class="row no-gutters">
         <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
         <div class="col-lg-6 my-auto showcase-text">
-          <h2>StarFinder Technology</h2>
+          <h2 style="color: #4b0080">StarFinder Technology 🔭</h2>
           <p class="lead mb-0" style="padding-top: 2rem; padding-bottom: 1rem">
             Traditional methods for stargazing are tedious and require
             expert knowledge on reading sky maps while motorised GoTo telescopes can easily cost over £1000, unjustifiably expensive for
@@ -125,29 +132,41 @@
           </p>
           <p class="lead mb-0">
             StarGaze is an inexpensive alternative and works by calculating the exact positional coordinates for the telescope
-            and guides you via LED lights after you select your target from a database of over 45 celestial objects on the companion app.
+            and guides you via LED lights after you select your target from a database of <strong style="color: #6610f2">over 45 celestial objects</strong> on the companion app.
           </p>
         </div>
       </div>
-      <div class="row no-gutters">
+      <div id="camera" class="row no-gutters">
         <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Perfect for budding hobbyists</h2>
+          <h2 style="color: #4b0080">Perfect for budding hobbyists 🚀</h2>
           <p class="lead mb-0" style="padding-top: 2rem; padding-bottom: 1rem">
             Step-by-step intuitive instructions for telescope setup are given via the app so that you can quickly enjoy stargazing anywhere in the world without wasting hours on calibration.
           </p>
           <p class="lead mb-0">
-            The high-resolution camera hardware is ergonomically designed for ease of use and automatically adjusts for enviromental changes and noise so your astrophotos always look stellar.
+            The high-resolution camera hardware is ergonomically designed for ease of use and <strong style="color: #6610f2">automatically adjusts for enviromental changes and noise</strong> so your astrophotos always look stellar.
           </p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Demo video -->
+  <section id="demovideo" class="showcase text-center" style="padding-bottom: 3rem">
+    <div class="container" style="margin-top: 3rem; margin-bottom: 1.5rem; color:  #4b0080">
+      <h2>Watch our demo</h2>
+    </div>
+    <div class="container-fluid p-0">
+      <div class="col-lg-12 order-lg-2 text-white showcase-img embed-responsive">
+        <video class="embed-responsive-item" src="img/video-1581516006.mp4" allowfullscreen autoplay loop muted></video>
+      </div>
+    </div>
+  </section>
+
   <!-- Team -->
-  <section id="team" class="testimonials text-center bg-light">
+  <section id="team" class="testimonials text-center bg-light" style="padding-top: 3rem; padding-bottom: 3rem">
     <div class="container">
-      <h2 class="mb-5">Meet Our Developers</h2>
+      <h2 class="mb-5" style="color: #4b0080">Meet Our Developers</h2>
       <div class="row">
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
@@ -160,7 +179,8 @@
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="img/louys.jpg" alt="">
             <h5>Tuck Hong</h5>
-            <p class="font-weight-light mb-0">""</p>
+            <p class="font-weight-light mb-0">"Space is huge, really huge. Owning a telescope can be a lot of fun, but it is often a struggle trying
+              to locate specific objects in the night sky. Our StarFinder technology allows me to easily find the stars I want to observe."</p>
           </div>
         </div>
         <div class="col-lg-4">
@@ -202,41 +222,23 @@
   <footer class="footer bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+        <div class="col-lg-6 h-50 text-center text-lg-left my-auto">
           <ul class="list-inline mb-2">
             <li class="list-inline-item">
-              <a href="#">About</a>
+              <a href="#Masthead">About</a>
             </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
-              <a href="#">Contact</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
+              <a href="mailto:tkh2017@ic.ac.uk">Contact</a>
             </li>
           </ul>
           <p class="text-muted small mb-4 mb-lg-0">&copy; FriendGroup 2020. All Rights Reserved.</p>
         </div>
-        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+        <div class="col-lg-6 h-50 text-center text-lg-right my-auto">
           <ul class="list-inline mb-0">
             <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-facebook fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item mr-3">
-              <a href="#">
-                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              <a href="https://github.com/Lactuca3/StarGaze">
+                <i class="fab fa-github fa-2x fa-fw"></i>
               </a>
             </li>
           </ul>
