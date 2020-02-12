@@ -64,8 +64,7 @@ class Sensors:
         return value
 
     def calibrate_magnetometer(self):
-        #sampleDuration = 60.0    #Test lasts for 60 seconds
-        sampleDuration = 9
+        sampleDuration = 60.0    #Test lasts for 60 seconds
         sampleRate = 3.0         #3Hz sample rate
         sleep_duration = 1 / sampleRate
         self.magnetometer_init() #Initialize HMC5883L magnetometer
