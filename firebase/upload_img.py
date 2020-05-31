@@ -22,6 +22,3 @@ imageBlob = bucket.blob("/")
 imagePath = "/home/pi/firebase_testing/testFirebase.jpg" #where your image is saved
 imageBlob = bucket.blob("testFirebase.jpg") # the name you want to save your image as on firebase
 imageBlob.upload_from_filename(imagePath)
-
-blob = bucket.get_blob('image.jpg')
-blob.download_to_filename("/home/pi/firebase_testing/downloaded.jpg")
