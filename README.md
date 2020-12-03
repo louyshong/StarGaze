@@ -1,5 +1,5 @@
 # StarGaze
-Private repository for a RaspberryPi based IoT device 
+RaspberryPi based IoT device 
 
 Website (please use chrome): https://lactuca3.github.io/StarGaze/
 
